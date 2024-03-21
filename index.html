@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="product">
+      <div class="product__info">
+        <div class="container">
+          <h1 class="product__title">Каталог</h1>
+          <h1 class="product__title product__title--gray">4 товара</h1>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="card__top">
+            <a href="#" class="card__image">
+              <img
+                src="/images/ODENS extream.JPG"
+                alt="ODENS extreme"
+              />
+            </a>
+            <div class="card__label">-10%</div>
+          </div>
+          <div class="card__bottom">
+            <div class="card__prices">
+              <div class="card__price card__price--discount">7 200</div>
+              <div class="card__price card__price--common">8 000</div>
+            </div>
+            <a href="#" class="card__title">
+              ODENS Extreme
+            </a>
+            <button class="card__add">В корзину</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__top">
+            <a href="#" class="card__image">
+              <img
+                src="/images/LYFT Red.JPG"
+                alt="LYFT Red"
+              />
+            </a>
+            <div class="card__label">-10%</div>
+          </div>
+          <div class="card__bottom">
+            <div class="card__prices">
+              <div class="card__price card__price--discount">6 300</div>
+              <div class="card__price card__price--common">7 000</div>
+            </div>
+            <a href="#" class="card__title">
+              LYFT Red
+            </a>
+            <button class="card__add">В корзину</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__top">
+            <a href="#" class="card__image">
+              <img
+                src="/images/LYFT Ice.jpg"
+                alt="LYFT ICE COOL"
+              />
+            </a>
+            <div class="card__label">-10%</div>
+          </div>
+          <div class="card__bottom">
+            <div class="card__prices">
+              <div class="card__price card__price--discount">4 500</div>
+              <div class="card__price card__price--common">5 000</div>
+            </div>
+            <a href="#" class="card__title">
+              LYFT Ice Cool
+            </a>
+            <button class="card__add">В корзину</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__top">
+            <a href="#" class="card__image">
+              <img
+                src="/images/snus ODENS.jpg"
+                alt="SNUS ODENS"
+              />
+            </a>
+            <div class="card__label">-10%</div>
+          </div>
+          <div class="card__bottom">
+            <div class="card__prices">
+              <div class="card__price card__price--discount">5 400</div>
+              <div class="card__price card__price--common">6 000</div>
+            </div>
+            <a href="#" class="card__title">
+              SNUS Odens x24
+            </a>
+            <button class="card__add">В корзину</button>
+          </div>
+        </div>
+     
+    </section>
+    <button class="cart" id="cart">
+      <img class="cart__image" src="./images/cart.png" alt="Cart" />
+      <div class="cart__num" id="cart_num">0</div>
+    </button>
+    <div class="popup">
+      <div class="popup__container" id="popup_container">
+        <div class="popup__item">
+          <h1 class="popup__title">Оформление заказа</h1>
+        </div>
+        <div class="popup__item" id="popup_product_list">
+          <div class="popup__product">
+            <div class="popup__product-wrap">
+              <img
+                src="./images/iphone-14-pro-max-gold.png"
+                alt="Apple IPhone 14 Pro Max 256Gb"
+                class="popup__product-image"
+              />
+              <h2 class="popup__product-title">
+                Смартфон Apple IPhone 14 Pro Max 256Gb, золотой
+              </h2>
+            </div>
+            <div class="popup__product-wrap">
+              <div class="popup__product-price">135000</div>
+              <button class="popup__product-delete">&#10006;</button>
+            </div>
+          </div>
+        </div>
+        <div class="popup__item">
+          <div class="popup__cost">
+            <h2 class="popup__cost-title">Итого</h2>
+            <output class="popup__cost-value" id="popup_cost">0</output>
+          </div>
+          <div class="popup__cost">
+            <h2 class="popup__cost-title">Скидка</h2>
+            <output class="popup__cost-value" id="popup_discount">0</output>
+          </div>
+          <div class="popup__cost">
+            <h2 class="popup__cost-title">Итого со скидкой</h2>
+            <output class="popup__cost-value" id="popup_cost_discount"
+              >0</output
+            >
+          </div>
+        </div>
+        <button class="popup__close" id="popup_close">&#10006;</button>
+      </div>
+    </div>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
